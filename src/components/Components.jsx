@@ -2,17 +2,20 @@ import { useState } from 'react'
 
 function Components() {
     
-    const [modo, setModo] = useState("whiteMode")
-    function setMode() {
-       setModo(modo == "whiteMode" ? "darkMode" : "whiteMode")
-       console.log("modo mudado para " + modo)
+    const [contagem, setContagem] = useState(0)
+    function adicionar() {
+        setContagem(contagem + 1)
+    }
+    function subtrair() {
+        setContagem(contagem - 1)
     }
 
     return (
-        <div className={modo}>
-            <h1>Teste de Modo</h1>
-            <button onClick={setMode}>Mudar Modo</button>
-        </div>
+        <>
+            <h1>{contagem}</h1>
+            <button onClick={subtrair}>-</button>
+            <button onClick={adicionar}>+</button>
+        </>
     )
 }
 
