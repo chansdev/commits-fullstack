@@ -14,3 +14,5 @@ function App() {
 }
 
 export default App
+
+// a 1 ta igual a 2 pq eu n sabia e fiz da melhor maneira sem saber
