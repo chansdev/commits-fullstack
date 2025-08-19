@@ -2,19 +2,25 @@ import { useState } from 'react'
 
 function Components() {
     
-    const [contagem, setContagem] = useState(0)
-    function adicionar() {
-        setContagem(contagem + 1)
+    const [nome, setNome] = useState("")
+    const [mensagem, setMensagem] = useState("")
+
+    function setarNome(event) {
+        setNome(event.target.value)
     }
-    function subtrair() {
-        setContagem(contagem - 1)
+
+    function setarMensagem(event) {
+        setMensagem(event.target.value)
     }
 
     return (
         <>
-            <h1>{contagem}</h1>
-            <button onClick={subtrair}>-</button>
-            <button onClick={adicionar}>+</button>
+            <form action="./">
+                <input type="text" id="nome" onInput={setarNome}/>
+                <input type="text" id="mensagem" onInput={setarMensagem}/>
+            </form>
+            <h1>{nome}</h1>
+            <p>{mensagem}</p>
         </>
     )
 }
