@@ -2,13 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Produto from './components/Produto.jsx'
+import Components from './components/Components.jsx'
 
 function App() {
 
   return (
     <>
-    <Produto nome="Arroz" preco="R$ 1,00" disponivel={true} />
+    <Components>
+      <h1>Olá, teste!</h1>
+      <p>Preciso de ajuda psicologica!!!</p>
+    </Components>
     </>
   )
 }
