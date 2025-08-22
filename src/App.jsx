@@ -10,7 +10,7 @@ function App() {
     <>
     <ListaTarefas/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
