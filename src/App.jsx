@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Carrinho from './components/Carrinho.jsx'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Faq from "./components/Faq.jsx";
 
 function App() {
-
   return (
     <>
-    <Carrinho/>
+      <Faq />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
